@@ -27,6 +27,9 @@ module.exports = {
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(__dirname, '../src/components')
+    },
+      alias: {
+      'vux-components': 'vux/src/components/'
     }
   },
   resolveLoader: {
@@ -48,6 +51,10 @@ module.exports = {
       }
     ],
     loaders: [
+      {
+        test: /vux.src.*?js$/,
+        loader: 'babel'
+      },
       {
         test: /\.vue$/,
         loader: 'vue'
