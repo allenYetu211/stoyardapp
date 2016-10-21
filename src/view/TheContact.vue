@@ -1,5 +1,12 @@
 <template>
-  
+  <div class="thecontact">
+    22
+  </div>
 </template>
 
-<style type="text/css"></style>
+<script>
+</script>
+
+<style>
+  
+</style>

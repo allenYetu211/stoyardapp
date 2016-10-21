@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <headers></headers>
+     <headers></headers>
+     <router-view></router-view>
   </div>
 </template>
 
@@ -8,7 +9,6 @@
 import Headers from './components/Header'
 
 export default {
-  name: 'app',
   components: {
     Headers
   }
