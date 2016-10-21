@@ -20,7 +20,7 @@
   flex-flow: column;
   &>div{
      flex-flow: row;
-     height:2rem;
+     height:2rem; 
   } 
   .seek{
     display: flex;
