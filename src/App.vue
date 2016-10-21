@@ -15,8 +15,13 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@function px2rem( $px ){
+  @return $px*320/$designWidth/20 + rem;
+}
+$designWidth : 350;
+
 #app {
-  padding:0 5px;
+  padding:0 px2rem(5);
 }
 </style>
