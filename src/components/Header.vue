@@ -6,7 +6,7 @@
       </div>
       <div class="tag_infor">
         <div class="people"></div>
-        <div class="information"> </div>
+        <div class="information"></div>
         <div class="lingur"></div>
       </div>
     </div>
@@ -20,7 +20,8 @@
   flex-flow: column;
   &>div{
      flex-flow: row;
-  }
+     height:2rem;
+  } 
   .seek{
     display: flex;
     input{
