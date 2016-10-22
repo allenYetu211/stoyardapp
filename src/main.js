@@ -1,27 +1,20 @@
-import Vue from 'vue/dist/vue.js'
+import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import App from './App'
-import TheContact from './view/TheContact'
-import Information from './view/Information'
-import Word from './view/word'
+import routes from './router'
 
 import './style/reset.css'
 import './style/px2rem.scss'
 
 Vue.use(VueRouter)
 
-const routes = [
-    { path: '/word', name: 'word', component: Word },
-    { path: '/TheContact', name: 'TheContact', component: TheContact },
-    { path: '/Information', name: 'Information', component: Information },
-    { path: '*', redirect: '/TheContact' }
-]
-var router = new VueRouter({
-  routes
+const router = new VueRouter({
+  routes,
+  linkActiveClass: 'active'
 })
 
 new Vue({
-  router,
-  render: h => h(App)
+  render: h => h(App),
+  router
 }).$mount('#app')
