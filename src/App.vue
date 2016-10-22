@@ -1,6 +1,12 @@
 <template>
   <div id="app" @scroll= "_scroll">
+<!--   <div>
+    <group>
+      <cell title="vue" value="cool"></cell>
+    </group>
+  </div> -->
      <headers></headers>
+
      <div class="router-content" >
          <router-view></router-view>
      </div>
