@@ -19,6 +19,7 @@
     "sass": "^0.5.0",
     "sass-loader": "^4.0.2",
     "vue": "^2.0.1",
+    "vue-resource": "^1.0.3",
     "vue-router": "^2.0.1",
     "vuex": "^2.0.0",
     "vux": "^0.1.3"
