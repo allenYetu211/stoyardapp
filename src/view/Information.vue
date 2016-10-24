@@ -44,18 +44,21 @@ export default{
 }
 </script>
 
-<style lang="scss" scrope>
+<style lang="scss" scoped>
 @function px2rem( $px ){
   @return $px*320/$designWidth/20 + rem;
 }
 $designWidth : 350;
 
 .Information{
+  ul{
+    padding-top:px2rem(20);
+  }
   li{
     .images{
         position:relative;
         width:100%;
-        padding-bottom: 50%;
+        padding-bottom: 60%;
         height: 0;
         overflow:hidden;
         img{
