@@ -2,6 +2,8 @@ import TheContact from './view/TheContact'
 import Information from './view/Information'
 import Word from './view/word'
 
+// import Mation from './components/Mation'
+
 export default [{
   path: '/Word',
   name: 'Word',
@@ -13,6 +15,10 @@ export default [{
 }, {
   path: '/Information',
   name: 'Information',
+  component: Information
+}, {
+  path: '/Information/mation/:id',
+  name: 'mation',
   component: Information
 }, {
   path: '*',

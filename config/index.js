@@ -25,6 +25,10 @@ module.exports = {
             '/PROJECTS': {
                 target: 'http://www.stoyard.com',
                 changeOrigin: true,
+            },
+            '/m': {
+                target: 'http://www.stoyard.com',
+                changeOrigin: true,
             }
         },
         // CSS Sourcemaps off by default because relative paths are "buggy"

@@ -1,12 +1,6 @@
 <template>
   <div id="app" @scroll= "_scroll">
-<!--   <div>
-    <group>
-      <cell title="vue" value="cool"></cell>
-    </group>
-  </div> -->
      <headers></headers>
-
      <div class="router-content" >
          <router-view></router-view>
      </div>
@@ -15,15 +9,24 @@
 
 <script>
 import Headers from './components/Header'
-
+import { mapGetters } from 'vuex'
 export default {
   components: {
     Headers
   },
-
+  data () {
+    return {
+      self: 'listGetter'
+    }
+  },
   methods: {
+    ...mapGetters(['listGetter']),
     _scroll (ev) {
       console.log(ev)
+    },
+    increment () {
+    },
+    decrement () {
     }
   }
 }

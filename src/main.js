@@ -4,6 +4,7 @@ import VueResource from 'vue-resource'
 
 import App from './App'
 import routes from './router'
+import store from './store'
 
 import './style/reset.css'
 import './style/px2rem.scss'
@@ -18,5 +19,6 @@ const router = new VueRouter({
 
 new Vue({
   render: h => h(App),
-  router
+  router,
+  store
 }).$mount('#app')
